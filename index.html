@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ndap Store - House and Kitchen Utensils</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #20b857;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <img src="IMG/Sans titre.jpg" alt="Ndap Store Logo" class="h-10 w-auto">
+            <nav class="hidden md:flex space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-blue-600">Menu</a>
+                <a href="#products" class="text-gray-700 hover:text-blue-600">Produits</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-600">A propos</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+            </nav>
+            <div class="md:hidden">
+                <button class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white py-20">
+        <div class="container mx-auto px-4 text-center" style="font-family: 'Poppins', sans-serif;">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Welcome to NDAP STORE CMR</h1>
+            <p class="text-lg md:text-xl mb-8">Your one-stop shop for premium house and kitchen utensils<br>
+                The House Of All Houses (La Maison des Maisons)
+            </p>
+            <a href="#products" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Achetez Maintenant</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Products, Nos Produits</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/8-Piece Complete Cookware Set – Includes 3….jpg" alt="Stainless Steel Cookware Set" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ensemble de batterie de cuisine en acier inoxydable</h3>
+                        <p class="text-gray-600 mb-4">Ensemble durable de 10 pièces, parfait pour la cuisine de tous les jours.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">60.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Ensemble de batterie de cuisine en acier inoxydable', 60000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/Cast Iron Frying Pan, Heavy-Duty Non-Stick Pan….jpg" alt="Non-Stick Frying Pan" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Poêle antiadhésive</h3>
+                        <p class="text-gray-600 mb-4">Poêle facile à nettoyer avec une distribution de chaleur supérieure.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">33.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Poêle antiadhésive', 33000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/FOHERE Knife Set 14 Pieces Self Sharpening Knife….jpg" alt="Kitchen Knife Set" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ensemble de couteaux professionnels</h3>
+                        <p class="text-gray-600 mb-4">Ensemble de 8 pièces avec poignées ergonomiques pour une coupe précise.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">20.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Ensemble de couteaux professionnels', 20000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/HALOU Light Grey Cookware Set Soup Pot Set Frying….jpg" alt="Blender" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Mixeur haute vitesse</h3>
+                        <p class="text-gray-600 mb-4">Moteur puissant de 1000 W pour les smoothies et les soupes.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">55.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Mixeur haute vitesse', 55000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/DESCRIPTION __Réveillez-vous avec l'odeur du café….jpg" alt="Coffee Maker" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cafetière programmable</h3>
+                        <p class="text-gray-600 mb-4">Capacité de 12 tasses avec fonction d'infusion automatique.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">50.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Cafetière programmable', 50000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/Ensemble De 14 Ustensiles De Cuisine En Silicone….jpg" alt="Storage Containers" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Ensemble de rangement hermétique</h3>
+                        <p class="text-gray-600 mb-4">Ensemble de 20 pièces pour organiser votre garde-manger.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">20.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Ensemble de rangement hermétique', 20000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/Gardez le café au chaud jusqu'à deux heures avec….jpg" alt="Coffee Maker" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cafetière</h3>
+                        <p class="text-gray-600 mb-4">Garde le café au chaud jusqu'à deux heures.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">60.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Cafetière', 60000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/La cafetière programmable à 12 tasses ProFtor…(1).jpg" alt="Coffee Maker" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cafetière programmable</h3>
+                        <p class="text-gray-600 mb-4">Cafetière programmable à 12 tasses.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">55.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Cafetière programmable', 55000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 9 -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300">
+                    <img src="IMG/La durée de garantie est de 2 ans_ Choisir ce….jpg" alt="Coffee Maker" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cafetière</h3>
+                        <p class="text-gray-600 mb-4">Garantie de 2 ans.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">60.000.CFA</span>
+                            <button onclick="orderViaWhatsApp('Cafetière', 60000)" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 flex items-center gap-2">
+                                <i class="fab fa-whatsapp"></i> Commander
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">A propos de Ndap Store</h2>
+            <div class="max-w-3xl mx-auto text-center">
+                <p class="text-gray-600 text-lg mb-6">
+                   Chez Ndap Store, nous sommes convaincus que les bons outils peuvent transformer votre expérience culinaire.
+
+Nous proposons une vaste gamme d'ustensiles de cuisine et d'articles ménagers de haute qualité, conçus pour faciliter vos tâches quotidiennes et les rendre plus agréables.
+                </p>
+                <p class="text-gray-600 text-lg">
+                    Des ustensiles de cuisine professionnels aux accessoires de cuisine indispensables, nous sélectionnons soigneusement chaque produit pour garantir qu'il réponde à nos normes de qualité, de durabilité et de fonctionnalité.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contactez Nous</h2>
+            <div class="max-w-md mx-auto">
+                <form class="space-y-4">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 rounded bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition duration-300">Envoyez Un Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2025 Ndap Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="JC/main.js"></script>
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/237659639841" target="_blank" class="whatsapp-float" title="Commandez via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script>
+        // WhatsApp configuration
+        const WHATSAPP_NUMBER = '237659639841';
+        
+        // Function to order via WhatsApp for static products
+        function orderViaWhatsApp(productName, productPrice) {
+            const message = `Bonjour Ndap Store! Je suis intéressé(e) par le produit suivant:\n\n*${productName}*\nPrix: ${productPrice.toLocaleString()} CFA\n\nJe voudrais passer commande. Merci!`;
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
+
